@@ -24,7 +24,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.bullet.completed.itodo</string>
+					<string>comment.line.completed.itodo</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -43,7 +43,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.bullet.pending.itodo</string>
+					<string>markup.inserted.itodo.completed</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -64,9 +64,16 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=\s)\@done \([\d\.:\-/ ].+\)\s?</string>
+			<string>\([\d\.:\-/ ].+\)\s?</string>
 			<key>name</key>
-			<string>meta.tag.itodo.completed</string>
+			<string>comment.line.completed.itodo</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=\s)\@done</string>
+			<key>name</key>
+			<string>markup.inserted.itodo.completed</string>
 		</dict>
 		<dict>
 			<key>match</key>
