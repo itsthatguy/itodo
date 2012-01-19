@@ -18,6 +18,7 @@ class ItodoCommand(sublime_plugin.TextCommand):
         self.view.replace(edit, self.view.word(line.begin()), "+ ")
       # undo @todo
       elif line_contents.startswith('+'):
+        #subfix = self.view.find('(\s)*@done(.)+\)$', line.begin())
         subfix = self.view.find('(\s)*@done(.)+\)$', line.begin())
         self.view.erase(edit, subfix)
         self.view.replace(edit, self.view.word(line.begin()), "- ")

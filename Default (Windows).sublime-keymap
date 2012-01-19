@@ -1,0 +1,3 @@
+[	// iTodo plugin
+	{ "keys": ["ctrl+d"], "command": "itodo" }
+]
